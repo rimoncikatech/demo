@@ -6,9 +6,8 @@
 						<div class="row">
 							<div class="col-lg-3">
 								<div href="index.html" class="course-carousel_item">
-									
-									<div class="description" height="50%" >
-									<img src="{{asset('asset/img/1cse_dept.jpg')}}"  alt="CSE"  >
+									<img src="{{asset('asset/img/1cse_dept.jpg')}}"  alt="CSE">
+									<div class="description">
 										<a href="static/_bachelor-of-science-in-computer-science-engineering_.html" target="_blank">
 											<span class="course-name">B.Sc. in Computer Science and Engineering</span>
 											<span>

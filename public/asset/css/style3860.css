@@ -58,18 +58,41 @@ p {
 
 img {
   max-width: 100%;
+  max-height:50%;
 }
 
 /* 
 Common
 */
+/* @media (min-width: 1440px){
+  .container{
+      max-width: 100%;
+      max-height: 25%;
+  }
+  .course-carousel-item > img {
+ 
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+} */
 
 
 @media (min-width: 1200px){
   .container{
       max-width: 1140px;
+      max-height: 50%;
+  }
+  .course-carousel-item > img {
+ 
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
   }
 }
+
+
+
 
 /* Start Bootstrap CSS */
 .container{
@@ -668,8 +691,9 @@ nav#header-navigation a img {
 }
 
 .hero-background-image img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height:100%;
+
 }
 
 .hero-content {
@@ -840,14 +864,16 @@ nav#header-navigation a img {
   border-radius: 8px;
   transition: 0.6s;
   background-color: var(--white);
-  width: 290px;
+  width: 100%;
+
   overflow: hidden;
-  height: 230px;
+  height: 50%;
 }
 
 .course-carousel-item > img {
-  height: 160px;
+ 
   width: 100%;
+  height: 50%;
   object-fit: cover;
 }
 
@@ -882,12 +908,12 @@ nav#header-navigation a img {
   transition: 0.6s;
   background-color: var(--white);
   width: 100%;
-  height: 332px;
+  height: 100;
   margin-bottom: 30px;
 }
 
 .course-carousel_item > img {
-  height: 267px;
+  height: 50%;
   width: 100%;
   object-fit: cover;
 }
@@ -961,6 +987,7 @@ nav#header-navigation a img {
 
 .facilities-card-item img {
   width: 100%;
+  height: 50%;
   /* height: 180px; */
   object-fit: cover;
   flex: 1;
@@ -1071,7 +1098,7 @@ nav#header-navigation a img {
   min-height: 500px;
   height: fit-content;
   padding: 20px calc(10% + 20px);
-  background-image: url("../1assets/imgs/1message-overview-bg.jpg");
+  background-image: url("http://127.0.0.1:8000/asset/img/1message-overview-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1193,7 +1220,8 @@ padding-top: 1rem !important;
 	Footer area
 */
 .footer-main {
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
+  padding-bottom: 20px;
   background-image: linear-gradient(180deg, #7e184e, #520c30);
 }
 

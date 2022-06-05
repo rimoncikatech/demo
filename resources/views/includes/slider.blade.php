@@ -34,7 +34,7 @@
 						</div>
 						<div class="hero-carousel-item">
 							<div class="hero-background-image">
-								<img src="1assets/imgs/1cse.jpg" alt="CSE">
+								<img src="{{asset('asset/img/1cse.jpg')}}" alt="CSE">
 							</div>
 							<div class="container">
 								<div class="hero-content">
@@ -124,7 +124,7 @@
 						</div>
 						<div class="hero-carousel-item">
 							<div class="hero-background-image">
-								<img src="{{asset('asset/img/1english.jpg')}}" alt="ENGLISH">
+								<img src="{{asset('asset/img/english.jpg')}}" alt="ENGLISH">
 							</div>
 							<div class="container">
 								<div class="hero-content">
@@ -219,7 +219,7 @@
 				</div>
 				<div class="container">
 					<div class="main-navigation">
-						<ul>
+						<!-- <ul>
 							<li class="has-sub">
 								<a href="javascript:void()">Admission</a>
 								<ul>
@@ -227,7 +227,7 @@
 										<a href="whystudyius.html" target="_blank">Why Study at Scholars</a>
 									</li>
 									<li>
-										<a href="tuitionfees.html" target="_blank">Courses &amp; Tutuon Fees</a>
+										<a href="tuitionfees.html" target="_blank">Courses &amp; Tuition Fees</a>
 									</li>
 									<li>
 										<a href="static/_admission_.html" target="_blank">Admission</a>
@@ -252,7 +252,7 @@
 							<li>
 								<a href="publication.html" target="_blank">Research</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 				</div>
 			</div>

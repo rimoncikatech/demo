@@ -91,10 +91,10 @@
     max-width: 100%;
 }
 .course-carousel_item {
-  height: 270px;
+  height: 1;
 }
 .course-carousel_item > img {
-  height: 200px;
+  object-fit: contain;;
 }
 /* .facilities-title {
   font-size: 0.97rem;
