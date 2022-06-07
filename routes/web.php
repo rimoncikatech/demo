@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AcademicController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
+Route::get('/ius-admin', function () {
     return view('admin');
 });
 
@@ -45,13 +46,22 @@ Route::get('/branding',[AcademicController::class,'branding'])->name('branding')
 Route::get('/admin',[AcademicController::class,'admin'])->name('admin');
 Route::get('/pro',[AcademicController::class,'pro'])->name('pro');
 Route::get('/IT',[AcademicController::class,'IT'])->name('IT');
-
 Route::get('/finance',[AcademicController::class,'finance'])->name('finance');
-
-
 Route::get('/Administration_Registrar',[AcademicController::class,'Administration_Registrar'])->name('Administration_Registrar');
-
 Route::get('/career-counselling-student-advisor',[AcademicController::class,'careercounselling'])->name('career-counselling-student-advisor');
+///pages
+Route::get('/notice',[PageController::class,'notices'])->name('notice');
+Route::get('/notice_details',[PageController::class,'notice_details'])->name('notice_details');
+Route::get('/alumni',[PageController::class,'alumni'])->name('alumni');
+Route::get('/recorded-classroom',[PageController::class,'recorded_classroom'])->name('recorded-classroom');
+Route::get('/student-support',[PageController::class,'student_support'])->name('student-support');
+Route::get('/industrial-collaboration',[PageController::class,'industrial_collaboration'])->name('industrial-collaboration');
+//admission
+Route::get('/admission',[PageController::class,'admission'])->name('admission');
+Route::get('/apply-online-admission',[PageController::class,'apply_online_admission'])->name('apply-online-admission');
+
+
+
 
 
 
